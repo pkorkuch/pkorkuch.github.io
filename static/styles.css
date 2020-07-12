@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('./fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('./fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'WorkSans';
+    src: url('./fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WorkSans';
+    src: url('./fonts/WorkSans-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
 html {
     box-sizing: border-box;
     line-height: 1.4;
