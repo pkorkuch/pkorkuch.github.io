@@ -31,7 +31,8 @@ html {
     line-height: 1.4;
     font-size: 100%;
     color: #333;
-    font-family: Frutiger,
+    font-family: WorkSans,
+    Frutiger,
     "Frutiger Linotype",
     Univers,
     Calibri,
@@ -79,6 +80,10 @@ li::before {
     list-style-position: inside;
     width: 15px;
     margin-left: -15px;
+}
+
+h1, h2 {
+    font-family: PlayfairDisplay;
 }
 
 h1 {
