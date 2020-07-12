@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+    line-height: 1.4;
+    font-size: 100%;
+    color: #333;
+    font-family: Frutiger,
+    "Frutiger Linotype",
+    Univers,
+    Calibri,
+    "Gill Sans",
+    "Gill Sans MT",
+    "Myriad Pro",
+    Myriad,
+    "DejaVu Sans Condensed",
+    "Liberation Sans",
+    "Nimbus Sans L",
+    Tahoma,
+    Geneva,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 100ch;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin: 3em auto 3em auto;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+li::before {
+    content: '';
+    float: left;
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+    width: 15px;
+    margin-left: -15px;
+}
+
+h1 {
+    font-size: 2.4em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin: 0;
+}
+
+h3, h4, h5, h6, p, span {
+    font-size: 1em;
+    margin: 0;
+}
+
+header h1, address{
+    text-align: center;
+}
+
+#work_history div, #education div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#skills ul li {
+    padding-left: 0;
+}
+
+#skills ul li::before {
+    list-style-type: none;
+}
+
+#skills ul li h3 {
+    display: inline;
+}
+
+header {
+    margin-bottom: 2.5em;
+}
+
+h2 {
+    margin-bottom: 0.1em;
+}
+
+.work_entry {
+    margin-bottom: 1em;
+}
+
+section {
+    margin-bottom: 2.5em;
+}
