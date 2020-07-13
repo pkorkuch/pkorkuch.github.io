@@ -13,6 +13,12 @@
         margin: 0.5in;
     }
 
+    address a,
+    address a:visited {
+        color: inherit;
+        text-decoration: none;
+    }
+
     @page {
         margin: 0;
     }
