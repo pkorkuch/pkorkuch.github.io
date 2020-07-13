@@ -1,15 +1,26 @@
 @font-face {
-    font-family: 'PlayfairDisplay';
-    src: url('./fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
-    font-weight: 400 900;
+    font-family: 'Bitter';
+    src: url('./fonts/bitter-bold-webfont.woff2') format('woff2'),
+        url('./fonts/bitter-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Bitter';
+    src: url('./fonts/bitter-italic-webfont.woff2') format('woff2'),
+        url('./fonts/bitter-italic-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'PlayfairDisplay';
-    src: url('./fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
-    font-weight: 400 900;
-    font-style: italic;
+    font-family: 'Bitter';
+    src: url('./fonts/bitter-regular-webfont.woff2') format('woff2'),
+        url('./fonts/bitter-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
@@ -83,7 +94,7 @@ li::before {
 }
 
 h1, h2 {
-    font-family: PlayfairDisplay;
+    font-family: Bitter;
 }
 
 h1 {
