@@ -24,16 +24,34 @@
 }
 
 @font-face {
-    font-family: 'WorkSans';
-    src: url('./fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
+    font-family: 'Work Sans';
+    src: url('./fonts/WorkSans-Regular.woff2') format('woff2'),
+        url('./fonts/WorkSans-Regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'WorkSans';
-    src: url('./fonts/WorkSans-Italic-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
+    font-family: 'Work Sans';
+    src: url('./fonts/WorkSans-Italic.woff2') format('woff2'),
+        url('./fonts/WorkSans-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('./fonts/WorkSans-Bold.woff2') format('woff2'),
+        url('./fonts/WorkSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('./fonts/WorkSans-BoldItalic.woff2') format('woff2'),
+        url('./fonts/WorkSans-BoldItalic.woff') format('woff');
+    font-weight: 700;
     font-style: italic;
 }
 
@@ -42,7 +60,7 @@ html {
     line-height: 1.4;
     font-size: 100%;
     color: #333;
-    font-family: WorkSans,
+    font-family: "Work Sans",
     Frutiger,
     "Frutiger Linotype",
     Univers,
