@@ -80,6 +80,27 @@ html {
     sans-serif;
 }
 
+h1, h2, h3 {
+    font-family: "Bitter",
+    "Palatino Linotype",
+    Palatino,
+    Palladio,
+    "URW Palladio L",
+    "Book Antiqua",
+    Baskerville,
+    "Bookman Old Style",
+    "Bitstream Charter",
+    "Nimbus Roman No9 L",
+    Garamond,
+    "Apple Garamond",
+    "ITC Garamond Narrow",
+    "New Century Schoolbook",
+    "Century Schoolbook",
+    "Century Schoolbook L",
+    Georgia,
+    serif;
+}
+
 *, *::before, *::after {
     box-sizing: inherit;
 }
@@ -109,10 +130,6 @@ li::before {
     list-style-position: inside;
     width: 15px;
     margin-left: -15px;
-}
-
-h1, h2 {
-    font-family: Bitter;
 }
 
 h1 {
