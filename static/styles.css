@@ -183,3 +183,20 @@ h2 {
 section {
     margin-bottom: 2.5em;
 }
+
+#print_button {
+    font-size: 20px;
+    width: 20px;
+    padding: 0;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    background-color: transparent;
+    border: none;
+}
+
+#print_button:hover,
+#print_button:focus,
+#print_button:active {
+    color: blue;
+}
