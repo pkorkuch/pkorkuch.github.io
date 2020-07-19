@@ -1,3 +1,7 @@
+/**************
+ * TYPOGRAPHY *
+ **************/
+
 @font-face {
     font-family: 'Bitter';
     src: url('./fonts/bitter-bold-webfont.woff2') format('woff2'),
@@ -56,11 +60,6 @@
 }
 
 html {
-    box-sizing: border-box;
-    line-height: 1.4;
-    font-size: 100%;
-    color: #333;
-    background-color: #f5f5f5;
     font-family: "Work Sans",
     Frutiger,
     "Frutiger Linotype",
@@ -79,47 +78,92 @@ html {
     Helvetica,
     Arial,
     sans-serif;
+    font-size: 100%;
+    line-height: 1.4;
 }
 
-h1, h2, h3 {
+body {
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3 {
     font-family: "Bitter",
-    "Palatino Linotype",
-    Palatino,
-    Palladio,
-    "URW Palladio L",
-    "Book Antiqua",
-    Baskerville,
-    "Bookman Old Style",
-    "Bitstream Charter",
-    "Nimbus Roman No9 L",
-    Garamond,
-    "Apple Garamond",
-    "ITC Garamond Narrow",
-    "New Century Schoolbook",
-    "Century Schoolbook",
-    "Century Schoolbook L",
-    Georgia,
-    serif;
+        "Palatino Linotype",
+        Palatino,
+        Palladio,
+        "URW Palladio L",
+        "Book Antiqua",
+        Baskerville,
+        "Bookman Old Style",
+        "Bitstream Charter",
+        "Nimbus Roman No9 L",
+        Garamond,
+        "Apple Garamond",
+        "ITC Garamond Narrow",
+        "New Century Schoolbook",
+        "Century Schoolbook",
+        "Century Schoolbook L",
+        Georgia,
+        serif;
+}
+
+h1 {
+    font-size: 2.4em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+/**********
+ * RESETS *
+ **********/
+
+html {
+    box-sizing: border-box;
 }
 
 *, *::before, *::after {
     box-sizing: inherit;
 }
 
-body {
-    max-width: 100ch;
-    padding: 1.5em;
-    margin: 3em auto 3em auto;
-    font-size: 1em;
-    background-color: #fefefe;
-    border-radius: 5px;
-    box-shadow: 0px 10px 10px -2px lightgray;
-    border: 1px solid #eee;
-}
-
 ul {
     padding-left: 0;
     margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    margin: 0;
+}
+
+/****************************
+ * COLORS, BORDERS, SHADOWS *
+ ****************************/
+
+html {
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+body {
+    background-color: #fefefe;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px -2px lightgray;
+}
+
+/***************************
+ * MARGIN, PADDING, LAYOUT *
+ ***************************/
+
+body {
+    max-width: 100ch;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin: 3em auto 3em auto;
+
 }
 
 li {
@@ -137,26 +181,12 @@ li::before {
     margin-left: -15px;
 }
 
-h1 {
-    font-size: 2.4em;
-    margin: 0;
-}
-
-h2 {
-    font-size: 1.4em;
-    margin: 0;
-}
-
-h3, h4, h5, h6, p, span {
-    margin: 0;
-}
-
 .right_justify {
     text-align: right;
     max-width: 50%;
 }
 
-header h1, address{
+header h1, address {
     text-align: center;
 }
 
@@ -178,7 +208,8 @@ header h1, address{
 }
 
 header {
-    margin-bottom: 2.5em;
+    margin-top: 2.8em;
+    margin-bottom: 1.4em;
 }
 
 h2 {
@@ -192,6 +223,24 @@ h2 {
 section {
     margin-bottom: 2.5em;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    width: 25%;
+    max-width: 100px;
+    border-radius: 50%;
+    border: 5px solid #fefefe;
+    box-shadow: 0 0 5px lightgray;
+}
+
+/**************
+ * COMPONENTS *
+ **************/
 
 #print_button {
     font-size: 20px;
@@ -209,6 +258,10 @@ section {
 #print_button:active {
     color: blue;
 }
+
+/****************************
+ * RESPONSIVE/MEDIA QUERIES *
+ ****************************/
 
 .data_short {
     display: none;
@@ -237,19 +290,9 @@ section {
     }
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header img {
-    width: 25%;
-    max-width: 100px;
-    border-radius: 50%;
-    border: 5px solid #fefefe;
-    box-shadow: 0 0 5px lightgray;
-}
+/*********
+ * ICONS *
+ *********/
 
 .material-icons-round {
     font-size: 18px;
