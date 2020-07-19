@@ -247,6 +247,6 @@ header img {
     width: 25%;
     max-width: 100px;
     border-radius: 50%;
-    border: 5px solid white;
-    box-shadow: 0 0 5px gray;
+    border: 5px solid #fefefe;
+    box-shadow: 0 0 5px lightgray;
 }
