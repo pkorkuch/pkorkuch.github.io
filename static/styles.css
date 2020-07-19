@@ -117,6 +117,11 @@ h2 {
     font-size: 1.4em;
 }
 
+address {
+    text-decoration: none;
+    font-style: normal;
+}
+
 /**********
  * RESETS *
  **********/
@@ -152,6 +157,19 @@ body {
     border: 1px solid #eee;
     border-radius: 5px;
     box-shadow: 0px 10px 10px -2px lightgray;
+    border-top: 5px solid #7E57C2;
+}
+
+address a {
+    color: #7E57C2;
+    text-decoration: none;
+}
+
+address a:hover .link-text,
+address a:focus .link-text,
+address a:active .link-text {
+    color: #333;
+    text-decoration: underline;
 }
 
 /***************************
@@ -162,8 +180,7 @@ body {
     max-width: 100ch;
     padding-left: 1.5em;
     padding-right: 1.5em;
-    margin: 3em auto 3em auto;
-
+    margin: 4.2em auto 2.8em auto;
 }
 
 li {
@@ -190,6 +207,20 @@ header h1, address {
     text-align: center;
 }
 
+address {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+address .address-item {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
 #work_history div, #education div {
     display: flex;
     justify-content: space-between;
@@ -208,8 +239,17 @@ header h1, address {
 }
 
 header {
-    margin-top: 2.8em;
     margin-bottom: 1.4em;
+    margin-top: -2.8em;
+}
+
+header img {
+    display: block;
+    margin: auto;
+    width: 5.6em;
+    border-radius: 50%;
+    border: 5px solid #fefefe;
+    box-shadow: 0 0 5px lightgray;
 }
 
 h2 {
@@ -224,18 +264,32 @@ section {
     margin-bottom: 2.5em;
 }
 
-header {
+/*********
+ * ICONS *
+ *********/
+
+.material-icons-round {
+    font-size: 18px;
+}
+
+.icon_center {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_center .material-icons-round {
+    margin-right: 0.25rem;
+    color: #000;
+}
+
+.section_header {
+    display: flex;
     align-items: center;
 }
 
-header img {
-    width: 25%;
-    max-width: 100px;
-    border-radius: 50%;
-    border: 5px solid #fefefe;
-    box-shadow: 0 0 5px lightgray;
+.section_header .material-icons-round {
+    margin-right: 0.5rem;
 }
 
 /**************
@@ -243,14 +297,17 @@ header img {
  **************/
 
 #print_button {
-    font-size: 20px;
-    width: 20px;
+    width: 24px;
     padding: 0;
-    position: fixed;
+    position: absolute;
     top: 1em;
     right: 1em;
     background-color: transparent;
     border: none;
+}
+
+#print_button i {
+    font-size: 24px;
 }
 
 #print_button:hover,
@@ -290,50 +347,11 @@ header img {
     }
 }
 
-/*********
- * ICONS *
- *********/
+/*************
+ * UTILITIES *
+ *************/
 
-.material-icons-round {
-    font-size: 18px;
-}
-
-address {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-address p:nth-child(2) {
-    margin-left: 1.1em;
-    margin-right: 1em;
-}
-
-address p {
-    text-decoration: none;
-    font-style: normal;
-}
-
-address a {
-    text-decoration: inherit;
-}
-
-.icon_center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.icon_center .material-icons-round {
-    margin-right: 0.25rem;
-    color: #000;
-}
-
-.section_header {
-    display: flex;
-    align-items: center;
-}
-
-.section_header .material-icons-round {
-    margin-right: 0.5rem;
-}
+ .safari-image-wrap {
+     height: 100%;
+     padding: 0;
+ }
