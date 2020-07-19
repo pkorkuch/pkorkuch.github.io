@@ -7,23 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.css">
-    <script src="https://kit.fontawesome.com/30e9170b61.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="static/styles.css">
     <link rel="stylesheet" href="static/print.css" media="print">
 </head>
 <body>
-    <button onclick="window.print();" id="print_button" type="button" aria-label="Print"><i class="fas fa-print"></i></button>
+    <button onclick="window.print();" id="print_button" type="button" aria-label="Print"><i class="material-icons-round">print</i></button>
     <header>
         <img src="static/images/patrick.jpg" alt="Headshot photo of Patrick Korkuch." />
         <h1>Patrick J. Korkuch</h1>
         <address>
-            <p>Brooklyn, NY</p>
-            <p><a href="mailto:pkorkuch@gmail.com">pkorkuch@gmail.com</a> | <a href="https://github.com/pkorkuch">github.com/pkorkuch</a></p>
+            <p class="icon_center"><i class="material-icons-round">place</i>Brooklyn, NY</p>
+            <p><a class="icon_center" href="mailto:pkorkuch@gmail.com">
+                    <i class="material-icons-round">email</i>pkorkuch@gmail.com
+            </a>
+            </p>
+            <p>
+            <a class="icon_center" href="https://github.com/pkorkuch">
+                    <i class="material-icons-round">code</i>github.com/pkorkuch
+            </a>
+            </p>
         </address>
     </header>
     <main>
         <section id="work_history">
-            <h2>Work History</h2>
+            <h2 class="section_header"><i class="material-icons-round">business</i><span>Work History</span></h2>
             <section class="work_entry">
                 <div>
                     <h3>Plated</h3>
@@ -87,7 +95,7 @@
             </section>
         </section>
         <section id="education">
-            <h2>Education</h2>
+            <h2 class="section_header"><i class="material-icons-round">school</i><span>Education</span></h2>
             <div>
                 <h3><span class="data_long">Tisch School of the Arts, </span>New York University</h3>
                 <h3 class="right_justify">BFA Drama, <span class="data_long">September 2014–December 2019</span><span class="data_short">Sep. '14–Dec. '19</span></h3>
@@ -101,7 +109,7 @@
             </ul>
         </section>
         <section id="skills">
-            <h2>Skills</h2>
+            <h2 class="section_header"><i class="material-icons-round">construction</i><span><span>Skills</span></span></h2>
             <ul>
                 <li>
                     <h3>Languages & Frameworks: </h3>
@@ -122,13 +130,13 @@
             </ul>
         </section>
         <section id="publications">
-            <h2>Publications</h2>
+            <h2 class="section_header"><i class="material-icons-round">menu_book</i><span>Publications</span></h2>
             <ul>
                 <li>Contributor. Reading Macro and Micro Trends in Nineteenth-Century Theatre History. In J. Travis and J. DeSpain, editors, <em>Teaching with Digital Humanities: Tools and Methods for Nineteenth-Century American Literature</em>, U. of Illinois P. (2018).</li>
             </ul>
         </section>
         <section id="honors">
-            <h2>Honors & Awards</h2>
+            <h2 class="section_header"><i class="material-icons-round">emoji_events</i><span>Honors & Awards</span></h2>
             <ul>
                 <li>Paper Mill Playhouse Rising Star Award for Production Stage Management</li>
                 <li>Citation, 37th New Jersey Legislative District, for promoting awareness on the issue of Marriage Equality in New Jersey</li>
