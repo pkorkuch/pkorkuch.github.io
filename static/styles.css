@@ -236,3 +236,61 @@ section {
         font-size: 1.12rem;
     }
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    width: 25%;
+    max-width: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 5px gray;
+}
+
+.material-icons-round {
+    font-size: 18px;
+}
+
+address {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+address p:nth-child(2) {
+    margin-left: 1.1em;
+    margin-right: 1em;
+}
+
+address p {
+    text-decoration: none;
+    font-style: normal;
+}
+
+address a {
+    text-decoration: inherit;
+}
+
+.icon_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_center .material-icons-round {
+    margin-right: 0.25rem;
+    color: #000;
+}
+
+.section_header {
+    display: flex;
+    align-items: center;
+}
+
+.section_header .material-icons-round {
+    margin-right: 0.5rem;
+}
